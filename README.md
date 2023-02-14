@@ -16,7 +16,7 @@ Data Preparation in MySQL:
 
 Join 2018,2019,2020 tables together and left join market_segment & meal_cost tables to gather all information for further visualization in PowerBI
 
-’‘’
+```
 With hotels AS(
 SELECT * FROM Hotel_Booking.`2018`
 UNION
@@ -31,7 +31,7 @@ LEFT JOIN Hotel_Booking.market_segment m
 ON h.market_segment = m.market_segment
 LEFT JOIN Hotel_Booking.meal_cost c 
 ON h.meal = c.meal;
-‘’‘
+```
 
 
 Data Transformation in Power Query:
